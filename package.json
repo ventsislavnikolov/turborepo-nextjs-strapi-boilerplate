@@ -26,6 +26,8 @@
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@commitlint/types": "^17.0.0",
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/npm": "^9.0.1",
     "commitizen": "^4.2.6",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.28.0",

@@ -7,6 +7,8 @@ importers:
       '@commitlint/cli': ^17.3.0
       '@commitlint/config-conventional': ^17.3.0
       '@commitlint/types': ^17.0.0
+      '@semantic-release/changelog': ^6.0.2
+      '@semantic-release/npm': ^9.0.1
       commitizen: ^4.2.6
       cz-conventional-changelog: ^3.3.0
       eslint: ^8.28.0
@@ -22,6 +24,8 @@ importers:
       '@commitlint/cli': 17.3.0
       '@commitlint/config-conventional': 17.3.0
       '@commitlint/types': 17.0.0
+      '@semantic-release/changelog': 6.0.2_semantic-release@19.0.5
+      '@semantic-release/npm': 9.0.1_semantic-release@19.0.5
       commitizen: 4.2.6
       cz-conventional-changelog: 3.3.0
       eslint: 8.30.0
@@ -2466,6 +2470,19 @@ packages:
   /@rushstack/eslint-patch/1.2.0:
     resolution: {integrity: sha1-i+NqH2bzJlOJ6QtfnJliFGdY9yg=}
     dev: false
+
+  /@semantic-release/changelog/6.0.2_semantic-release@19.0.5:
+    resolution: {integrity: sha1-/c29NoeIyPzGnErym/IGT0r7RfQ=}
+    engines: {node: '>=14.17'}
+    peerDependencies:
+      semantic-release: '>=18.0.0'
+    dependencies:
+      '@semantic-release/error': 3.0.0
+      aggregate-error: 3.1.0
+      fs-extra: 11.1.0
+      lodash: 4.17.21
+      semantic-release: 19.0.5
+    dev: true
 
   /@semantic-release/commit-analyzer/9.0.2_semantic-release@19.0.5:
     resolution: {integrity: sha1-p45U+YNBk7VfEHP6YljuzJpUXgM=}
