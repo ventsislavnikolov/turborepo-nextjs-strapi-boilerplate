@@ -1,10 +1,18 @@
+# Requirements
+
+1. NodeJS => v14 (https://nodejs.org/en/)
+2. Docker (https://www.docker.com/)
+
 # Turborepo install
 
 If you wanna use the Docker, don't install the dependencies localy because there is a bug about
 Pnpm. So you have use the normal build with
 
-1. pnpm install
-2. pnpm dev
+1. npm install -g pnpm
+2. npm install -g commitizen
+3. npx playwright install
+4. pnpm install
+5. pnpm dev
 
 or with Docker
 
