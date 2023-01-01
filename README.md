@@ -12,12 +12,14 @@ Pnpm. So you have use the normal build with
 2. npm install -g commitizen
 3. npx playwright install
 4. pnpm install
-5. pnpm dev
+5. rename the correct .ENV file
+6. pnpm dev
 
 or with Docker
 
 1. make sure that you dont have any node_modules folder localy
-2. docker-compose up -d
+2. rename the correct .ENV file
+3. docker-compose up -d
 
 # Turborepo starter
 
