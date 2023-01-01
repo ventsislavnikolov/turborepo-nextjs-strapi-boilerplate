@@ -65,6 +65,9 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+- [Playwright](https://playwright.dev/) for end-to-end testing for modern web apps.
+- [Storybook](https://storybook.js.org/) for building UI components and pages in isolation. Instaled
+  on UI package.
 - [GitHub Actions](https://docs.github.com/en/actions) for build, test and release on GitHub.
 - [GitHub Issues](https://docs.github.com/en/actions) for bug report and feature requests.
 - [GitLab CI](https://docs.gitlab.com/ee/ci/) for build, test and deploy on GitLab.
