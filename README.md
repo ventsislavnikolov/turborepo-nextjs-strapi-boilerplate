@@ -31,13 +31,15 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
-- `web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
+- `web`: [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/) for
+  front-end app.
 - `ui`: a stub React component library with [TypeScript](https://www.typescriptlang.org/) and
   [Tailwind CSS](https://tailwindcss.com/) shared by `web` application.
 - `eslint-config-react`: `eslint` configurations (includes `eslint-config-next` and
   `eslint-config-prettier`)
 - `tailwind-config`: `tailwind.config.js`s used throughout the monorepo
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- `tsconfig`: [Typescript] (https://www.typescriptlang.org/) `tsconfig.json`s used throughout the
+  monorepo for Typescrip syntax
 - `web-tests`: [Playwright](https://playwright.dev/) tests for `web` application.
 
 ### Building packages/ui
@@ -67,7 +69,6 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
-- [Playwright](https://playwright.dev/) for end-to-end testing for modern web apps.
 - [Storybook](https://storybook.js.org/) for building UI components and pages in isolation. Instaled
   on UI package.
 - [GitHub Actions](https://docs.github.com/en/actions) for build, test and release on GitHub.
