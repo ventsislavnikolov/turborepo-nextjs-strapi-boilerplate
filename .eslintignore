@@ -1,0 +1,6 @@
+node_modules
+.github
+
+# Packages
+packages/ui/.turbo/*
+packages/ui/dist/*

@@ -1,0 +1,41 @@
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+build:
+  image: ubuntu:latest
+  stage: build
+  only:
+    - development
+  tags:
+    - turborepo
+  script:
+    - sudo apt-get update -yqq
+    - curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+    - sudo apt-get install -y nodejs
+    - npm -v
+    - export NODE_OPTIONS=--max_old_space_size=4096
+    - npm install -g pnpm
+    - pnpm run build
+  artifacts:
+    paths:
+      - apps/web/.next
+    expire_in: 1 hour
+
+deploy:
+  stage: deploy
+  services:
+    - name: docker:20.10.11-dind
+  image: docker:20.10.11-dind
+  before_script:
+    - docker version
+  only:
+    - main
+  tags:
+    - turborepo
+  script:
+    - docker-compose up -d

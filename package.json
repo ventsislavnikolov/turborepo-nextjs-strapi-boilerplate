@@ -1,0 +1,41 @@
+{
+  "name": "turborepo-nextjs-boilerplate",
+  "version": "1.0.0-semantically-released",
+  "private": true,
+  "license": "MIT",
+  "author": "Ventsislav Nikolov",
+  "homepage": "https://github.com/ventsislavnikolov/turborepo-nextjs-boilerplate",
+  "bugs": {
+    "url": "https://github.com/ventsislavnikolov/turborepo-nextjs-boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ventsislavnikolov/turborepo-nextjs-boilerplate.git"
+  },
+  "scripts": {
+    "ci": "turbo e2e:test",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "prepare": "husky install",
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev --parallel",
+    "storybook": "turbo run storybook"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@commitlint/types": "^17.0.0",
+    "commitizen": "^4.2.6",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.28.0",
+    "eslint-config-react": "workspace:*",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.4",
+    "prettier": "^2.8.0",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "semantic-release": "^19.0.5",
+    "semantic-release-ado": "^1.4.0",
+    "turbo": "1.6.3"
+  }
+}

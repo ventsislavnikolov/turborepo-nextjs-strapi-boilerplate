@@ -1,0 +1,30 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "next lint",
+    "start": "next start",
+    "build": "tailwindcss ./styles/globals.css --output ./styles/output.css && next build",
+    "dev": "concurrently \"next dev\" \"tailwindcss --input ./styles/globals.css --output ./styles/output.css --watch\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "next": "^13.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "autoprefixer": "^10.4.13",
+    "eslint-config-react": "workspace:*",
+    "postcss": "^8.4.19",
+    "tailwind-config": "workspace:*",
+    "tailwindcss": "^3.2.4",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.3"
+  }
+}

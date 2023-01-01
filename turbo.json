@@ -1,0 +1,30 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "outputs": ["dist/", ".next/", "public/dist/"],
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "outputs": ["coverage/"],
+      "dependsOn": []
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "env": ["NODE_ENV"],
+      "outputs": []
+    },
+    "dev": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "e2e:test": {
+      "cache": false
+    },
+    "storybook": {
+      "cache": false
+    }
+  }
+}
