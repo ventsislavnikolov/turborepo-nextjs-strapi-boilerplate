@@ -17,11 +17,11 @@
     "lint": "turbo run lint",
     "test": "turbo run test",
     "prepare": "husky install",
-    "build": "turbo run build",
     "clean": "turbo run clean",
     "dev": "turbo run dev --parallel",
     "storybook": "turbo run storybook",
-    "production": "turbo run production"
+    "production": "turbo run production",
+    "build": "turbo run build --filter=web..."
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
