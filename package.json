@@ -20,7 +20,8 @@
     "build": "turbo run build",
     "clean": "turbo run clean",
     "dev": "turbo run dev --parallel",
-    "storybook": "turbo run storybook"
+    "storybook": "turbo run storybook",
+    "production": "turbo run production"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",

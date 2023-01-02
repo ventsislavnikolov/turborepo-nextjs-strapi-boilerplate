@@ -11,7 +11,23 @@
     },
     "lint": {
       "dependsOn": ["^build"],
-      "env": ["NODE_ENV"],
+      "env": [
+        "NODE_ENV",
+        "NEXT_PUBLIC_API_URL",
+        "POSTGRES_DB",
+        "POSTGRES_USER",
+        "POSTGRES_PASSWORD",
+        "HOST",
+        "ADMIN_JWT_SECRET",
+        "DATABASE_PORT",
+        "DATABASE_HOST",
+        "DATABASE_NAME",
+        "DATABASE_USERNAME",
+        "DATABASE_PASSWORD",
+        "DATABASE_SSL",
+        "API_TOKEN_SALT",
+        "JWT_SECRET"
+      ],
       "outputs": []
     },
     "dev": {
@@ -21,6 +37,9 @@
       "cache": false
     },
     "e2e:test": {
+      "cache": false
+    },
+    "production": {
       "cache": false
     },
     "storybook": {

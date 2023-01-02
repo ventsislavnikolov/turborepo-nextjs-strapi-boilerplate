@@ -4,3 +4,6 @@ node_modules
 # Packages
 packages/ui/.turbo/*
 packages/ui/dist/*
+
+# Strapi
+apps/cms/*

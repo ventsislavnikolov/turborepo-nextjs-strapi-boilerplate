@@ -19,7 +19,8 @@ or with Docker
 
 1. make sure that you dont have any node_modules folder localy
 2. rename the correct .ENV file
-3. docker-compose up -d
+3. rename the correct .ENV file in apps/cms/
+4. docker-compose up -d
 
 # Turborepo starter
 
@@ -31,6 +32,7 @@ This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
 
+- `cms`: [Strapi.io](https://strapi.io/) headless CMS for back-end app.
 - `web`: [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/) for
   front-end app.
 - `ui`: a stub React component library with [TypeScript](https://www.typescriptlang.org/) and
