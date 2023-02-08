@@ -10,7 +10,7 @@ Pnpm. So you have use the normal build with
 
 1. npm install -g pnpm
 2. npm install -g commitizen
-3. npx playwright install
+3. pnpx playwright install
 4. pnpm install
 5. rename the correct .ENV file
 6. pnpm dev
